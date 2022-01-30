@@ -4,6 +4,8 @@
   <strong><%= post.title %></strong><br>
   <% if user_signed_in? %>
     <strong><%= post.user.name %></strong><br>
+  <% else %>
+    <strong>Sign In to see who wrote this!</strong><br>
   <% end %>
   <p><%= post.body %></p>
 <% end %>
